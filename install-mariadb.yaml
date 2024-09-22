@@ -10,4 +10,3 @@
       name:
         - mariadb-server
       state: present
-    become: true
