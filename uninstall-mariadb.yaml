@@ -1,0 +1,11 @@
+- name: Playbook to uninstall Packages
+  hosts:
+    - local
+      #    - dev
+      #    - prod
+  tasks:
+  - name: Uninstall mariadb
+    package:
+      name:
+        - mariadb-server
+      state: absent

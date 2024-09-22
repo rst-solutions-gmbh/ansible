@@ -1,0 +1,11 @@
+- name: Playbook to Install Packages
+  hosts:
+    - local
+      #    - dev
+      #    - prod
+  tasks:
+  - name: Install mariadb
+    package:
+      name:
+        - mariadb-server
+      state: present
