@@ -3,6 +3,7 @@
     - local
       #    - dev
       #    - prod
+  become: true
   become_method: sudo
   tasks:
   - name: Uninstall mariadb
