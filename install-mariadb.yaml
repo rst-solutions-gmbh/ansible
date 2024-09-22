@@ -1,6 +1,6 @@
 - name: Playbook to Install Packages
-  hosts:
-    - localhost
+  hosts: localhost
+  connection: local
     #- local
       #    - dev
       #    - prod
