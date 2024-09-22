@@ -4,6 +4,7 @@
       #    - dev
       #    - prod
   tasks:
+  become: true
   - name: Install mariadb
     package:
       name:
