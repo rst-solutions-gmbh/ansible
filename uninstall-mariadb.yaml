@@ -1,10 +1,11 @@
 - name: Playbook to uninstall Packages
   hosts:
     - local
-      #    - dev
-      #    - prod
-  #become: true
-  #become_method: sudo
+  become: yes
+  become_method: sudo
+  become_user: ralf
+  vars:
+    allow_world_readable_tmpfiles: true
   tasks:
   - name: Uninstall mariadb
     package:
