@@ -1,6 +1,6 @@
 - name: Playbook to uninstall Packages
   hosts:
-    - local
+    - localhost
   become: yes
   become_method: sudo
   become_user: ralf
