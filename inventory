@@ -1,0 +1,9 @@
+[local]
+192.168.30.101
+
+
+[prod]
+
+
+[local:vars]
+ansible_connection=local
