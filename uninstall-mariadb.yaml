@@ -11,6 +11,9 @@
   - name: Get hostname
     shell: echo $HOSTNAME
     register: result
+  - name: Show host's ip
+    debug:
+      msg: "{{ ansible_ssh_host }}"
   - name: Uninstall mariadb
     package:
       name:
