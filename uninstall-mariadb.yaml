@@ -4,9 +4,9 @@
 - name: Playbook to uninstall Packages
   hosts:
     - localhost
-  become: yes
-  become_method: sudo
-  become_user: ralf
+#  become: yes
+#  become_method: sudo
+#  become_user: ralf
   vars:
     allow_world_readable_tmpfiles: true
   tasks:
