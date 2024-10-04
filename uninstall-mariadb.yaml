@@ -1,6 +1,4 @@
-- name: Get hostname
-  shell: echo $HOSTNAME
-  register: result
+
 - name: Playbook to uninstall Packages
   hosts:
     - localhost
@@ -10,6 +8,9 @@
   vars:
     allow_world_readable_tmpfiles: true
   tasks:
+  - name: Get hostname
+    shell: echo $HOSTNAME
+    register: result
   - name: Uninstall mariadb
     package:
       name:
