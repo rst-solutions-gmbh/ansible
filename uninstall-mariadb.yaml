@@ -14,8 +14,8 @@
   - name: Show host's ip
     debug:
       msg: "{{ ansible_ssh_host }}"
-  - name: Uninstall mariadb
-    package:
-      name:
-        - mariadb-server
-      state: absent
+#  - name: Uninstall mariadb
+#    package:
+#      name:
+#        - mariadb-server
+#      state: absent
