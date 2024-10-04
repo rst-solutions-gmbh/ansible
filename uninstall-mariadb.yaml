@@ -1,3 +1,6 @@
+- name: Get hostname
+  shell: echo $HOSTNAME
+  register: result
 - name: Playbook to uninstall Packages
   hosts:
     - localhost
